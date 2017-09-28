@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour {
 		}
 
 		for (int i = 0; i < enemies.Count; i++) {
-			enemies[0].MoveEnemy();
+			enemies[i].MoveEnemy();
 			yield return new WaitForSeconds(enemies[i].moveTime);
 		}
 		playersTurn = true;
